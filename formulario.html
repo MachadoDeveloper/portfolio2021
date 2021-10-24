@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../Freee style/css/style.css">
+
+    <title>Reservas</title>
+    <link rel="icon" href="">
+  </head>
+  <body>
+
+    <header> <!-- inicio do Header-->
+        <nav class="navbar navbar-expand-md navbar-light navbar-transparente"> <!-- inicio da navegação--> <!--fixed-top removed-->
+            <div class="container"> <!--Inicio do container fluido class="container-fluid" percebi so a margem menor-->
+        
+            <a href="index.html " class="navbar-brand">
+                <img id="logotipo" src="../Freee style/imagens/royalplacelogo.png"  class="" alt="logo">
+            </a> 
+           
+            <!--<a class="navbar-brand" href="#">Spotify</a> foi substituida pela imagem correta spotify.svg-->
+            <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTopo" aria-controls="menuTopo" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> configuração do bootstrap site-->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menuTopo">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+
+                <menu class="collapse navbar-collapse" id="menuTopo">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <!--usou ml-auto, mas poderia ser:
+                            ml-auto => bootstrap 4 margin left-auto
+                            me-auto => bootstrap 5 margin end-auto-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Menu01</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Menu02</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Menu03</a>
+                        </li>
+
+                        <li class="nav-item divisor"></li>
+                            
+                        <li class="nav-item">
+                            <a  class="nav-link" href="">Cadastre-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  class="nav-link" href="">Entrar</a>
+                        </li>
+                    </ul>
+                </menu>
+
+
+            </div>  <!--/fim do container fluido-->
+        </nav><!-- /fim da navegação-->
+    </header> <!-- /fim  do Header-->
+
+    <section id="secao-formulario" class=""> <!-- inicio secao formulario-->
+
+
+        <div class="container-formulario d-flex align-items-start mt-5 ml-2"> <!-- formmulario container-->
+
+          <form id="cadastroCliente" class="mb-2 needs-validation">
+
+            <div class="mt-3">
+                <label for="entradaNome" ><strong>Nome:</strong></label>
+                <input type="text" id="nome" class="form-control" aria-describedby="nomeUsuario" placeholder="digite seu nome completo" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+            </div>
+
+            <div class="mt-3">
+                <label for="entradaEmail" ><strong>Email:</strong></label>
+                <input type="email" id="email" class="form-control" aria-describedby="emailUsuario" placeholder="name@example.com" required>
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+            </div>
+
+            <div class="input-group mb-3 mt-2">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="instagran" aria-label="instagran" aria-describedby="basic-addon1">
+              </div>
+
+            <div class=" mt-3 form-floating">
+                <label for="floatingPassword"><strong>Insira uma senha</strong></label>
+                <input type="password" class="form-control" id="senha" placeholder="insira uma senha" required>
+                
+            </div>
+
+            <div class=" mt-3 form-floating">
+                <label for="floatingPassword"><strong>Confirme a senha</strong></label>
+                <input type="password" class="form-control" id="validacaoSenha" placeholder="confirme sua senha" required>
+                
+            </div>
+
+            <div class="mt-3">
+                <select class="form-select" aria-label="categoriaProfissional" required>
+                    <option selected>Selecione sua profissão</option>
+                    <option value="1">Médico(Geral)</option>
+                    <option value="2">Psicólogo</option>
+                    <option value="3">Massoterapeuta</option>
+                    <option value="4">Esteticista</option>
+                    <option value="5">Médico (Acupunturista)</option>
+                    <option value="6">Fisioterapeuta</option>
+                    <option value="6">Nutricionista</option>
+                  </select>
+            </div>
+        
+            <div class="mb-3">
+                <label for="formFileSm" class="form-label"><strong>Seu documento de Registro</strong> </label>
+                <input class="form-control form-control-sm" id="arquivoRegistro" type="file" placeholder="ex.: CRM CRO " required>
+            </div>
+
+            <div class="mt-3">
+                <label for="entradaNomeMae"><strong>Nome da mãe:</strong></label>
+                <input type="text" id="nomeMae" class="form-control" aria-describedby="nomeMaeUsuario" placeholder="digite o nome da mãe" required>
+            </div>
+
+            <div class="mt-3">
+                <label for="entradaRG_CNH"><strong>Número RG ou CNH:</strong></label>
+                <input type="number" id="documentoRegistro" class="form-control" aria-describedby="documentoRegistroUsuario" placeholder="digite o nº da CNH ou RG" required>
+            </div>
+
+            <!-- Teste de validação-->
+            <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Declaro que as informações contidas acima são veridicas.
+                  </label>
+                  <div class="invalid-feedback">
+                    Você deve concordar com os temos antes de enviar
+                  </div>
+                </div>
+              </div>
+              <div class="d-grid gap-2 d-md-block mt-2">
+                    <button class="btn  btn-success btn-lg" type="submit" value="submit">Enviar</button>
+                    <button class="btn  btn-danger btn-lg" type="reset" value="reset">Cancelar</button>
+                </div>  
+
+
+
+              </div>
+            
+            
+          </form>
+
+        </div>   <!-- /fim formmulario container-->
+    </section><!-- /fim  secao  formulario-->
+
+   
+
+    <footer>
+      <div class="row d-flex">
+        <div class="col-md-4 justify-content-center text-center">
+          <ul class="">
+            <li class=""><a href="">link</a></li>
+            <li class=""><a href="">link</a></li>
+            <li class=""><a href="">link</a></li>
+            <li class=""><a href="">link</a></li>
+            <li class=""><a href="">link</a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit semper metus, vel varius neque pretium vel.
+            vel varius neque pretium vel. Proin lobortis aliquet eros, sed pulvinar elit aliquam id. Nullam congue tincidunt urna, 
+            eleifend ultrices tellus finibus non. Sed libero dui, dictum fermentum finibus ut, 
+            pellentesque tincidunt mi. Nulla blandit, lorem eget viverra mattis, nibh felis fringilla lectus,
+          </p>
+
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </footer>
+
+   
+
+    
+
+    
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
