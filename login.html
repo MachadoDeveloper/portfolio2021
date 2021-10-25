@@ -53,10 +53,10 @@
                         <li class="nav-item divisor"></li>
                             
                         <li class="nav-item">
-                            <a  class="nav-link" href="formulario.html">Cadastre-se</a>
+                            <a  class="nav-link" href="">Cadastre-se</a>
                         </li>
                         <li class="nav-item">
-                            <a  class="nav-link" href="login.html">Entrar</a>
+                            <a  class="nav-link" href="">Entrar</a>
                         </li>
                     </ul>
                 </menu>
@@ -66,94 +66,26 @@
         </nav><!-- /fim da navegação-->
     </header> <!-- /fim  do Header-->
 
-    <section id="secao-formulario" class=""> <!-- inicio secao formulario-->
+    <section id="secao-login" class=""> <!-- inicio secao formulario-->
 
 
-        <div class="container-formulario d-flex align-items-start mt-5 ml-2"> <!-- formmulario container-->
+        <div class="container-login d-flex justify-content-center  "> <!-- formmulario container-->
 
-          <form id="cadastroCliente" class="mb-2 needs-validation">
-
-            <div class="mt-3">
-                <label for="entradaNome" ><strong>Nome:</strong></label>
-                <input type="text" id="nome" class="form-control" aria-describedby="nomeUsuario" placeholder="digite seu nome completo" required>
-                <div class="valid-feedback">
-                    Looks good!
-                  </div>
+          <form id="loginCliente" class="mb-2 d-flex  flex-column  align-items-center mt-5 ml-2 mb-5">
+            
+            <div class="mt-3  ">
+                <label for="entradaNome" ><strong>Login:</strong></label>
+                <input type="text" id="nome" class="form-control" aria-describedby="nomeUsuario" placeholder="digite seu usuário" required>
             </div>
 
             <div class="mt-3">
-                <label for="entradaEmail" ><strong>Email:</strong></label>
-                <input type="email" id="email" class="form-control" aria-describedby="emailUsuario" placeholder="name@example.com" required>
-                <div class="valid-feedback">
-                    Looks good!
-                  </div>
+                <label for="entradaNome" ><strong>Senha:</strong></label>
+                <input type="password" id="senha" class="form-control" aria-describedby="senhaUsuario" placeholder="digite sua senha" required>
             </div>
 
-            <div class="input-group mb-3 mt-2">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="instagran" aria-label="instagran" aria-describedby="basic-addon1">
-              </div>
-
-            <div class=" mt-3 form-floating">
-                <label for="floatingPassword"><strong>Insira uma senha</strong></label>
-                <input type="password" class="form-control" id="senha" placeholder="insira uma senha" required>
-                
-            </div>
-
-            <div class=" mt-3 form-floating">
-                <label for="floatingPassword"><strong>Confirme a senha</strong></label>
-                <input type="password" class="form-control" id="validacaoSenha" placeholder="confirme sua senha" required>
-                
-            </div>
-
-            <div class="mt-3">
-                <select class="form-select" aria-label="categoriaProfissional" required>
-                    <option selected>Selecione sua profissão</option>
-                    <option value="1">Médico(Geral)</option>
-                    <option value="2">Psicólogo</option>
-                    <option value="3">Massoterapeuta</option>
-                    <option value="4">Esteticista</option>
-                    <option value="5">Médico (Acupunturista)</option>
-                    <option value="6">Fisioterapeuta</option>
-                    <option value="6">Nutricionista</option>
-                  </select>
-            </div>
-        
-            <div class="mb-3">
-                <label for="formFileSm" class="form-label"><strong>Seu documento de Registro</strong> </label>
-                <input class="form-control form-control-sm" id="arquivoRegistro" type="file" placeholder="ex.: CRM CRO " required>
-            </div>
-
-            <div class="mt-3">
-                <label for="entradaNomeMae"><strong>Nome da mãe:</strong></label>
-                <input type="text" id="nomeMae" class="form-control" aria-describedby="nomeMaeUsuario" placeholder="digite o nome da mãe" required>
-            </div>
-
-            <div class="mt-3">
-                <label for="entradaRG_CNH"><strong>Número RG ou CNH:</strong></label>
-                <input type="number" id="documentoRegistro" class="form-control" aria-describedby="documentoRegistroUsuario" placeholder="digite o nº da CNH ou RG" required>
-            </div>
-
-            <!-- Teste de validação-->
-            <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Declaro que as informações contidas acima são veridicas.
-                  </label>
-                  <div class="invalid-feedback">
-                    Você deve concordar com os temos antes de enviar
-                  </div>
-                </div>
-              </div>
-              <div class="d-grid gap-2 d-md-block mt-2">
-                    <button class="btn  btn-dark btn-lg" type="reset" value="reset">Cancelar</button>
-                    <button class="btn  btn-light btn-lg" type="submit" value="submit">Enviar</button>
-              </div>  
-
-
-
-              </div>
+            <div class="d-grid gap-2 d-md-block mt-5 mb-5">
+                <button class="btn  btn-dark" type="submit" value="submit">Entrar</button>
+            </div>  
             
             
           </form>
